@@ -1,6 +1,11 @@
 const mongoose = require('mongoose');
 
-const connectDB = async() => {
-  
-  
+const connectDB = async () => {
+  try {
+    
+    
+  }
+  catch (error) {
+    
+  }
 }
