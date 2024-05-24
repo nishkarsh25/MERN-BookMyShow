@@ -16,7 +16,11 @@ const TimeShedule = () => {
     window.localStorage.setItem("slot", value);
   };
 
-  
+  return (
+    <>
+      
+    </>
+  );
 };
 
 
