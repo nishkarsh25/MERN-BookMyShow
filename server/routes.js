@@ -24,6 +24,9 @@ router.post("/booking", async (req, res) => {
   }
 });
 
-
+// Endpoint for getting the last booking details from the database and sending it to the frontend.
+router.get("/booking", async (req, res) => {
+  
+});
 
 
