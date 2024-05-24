@@ -26,11 +26,11 @@ const BsState = (props) => {
         slot: time,
         seats: noOfSeat,
       });
-  
+
       const data = response.data;
       setErrorPopup(true);
       setErrorMessage(data.message);
-  
+
       if (response.status === 200) {
         changeTime("");
         changeMovie("");
@@ -62,7 +62,7 @@ const BsState = (props) => {
       console.error('There was an error fetching the last booking details:', error);
     }
   };
-  
+
 
   useEffect(() => {
     const movie = window.localStorage.getItem("movie");
