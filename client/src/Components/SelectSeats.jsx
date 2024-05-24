@@ -5,7 +5,7 @@ import SeatsInput from "./SeatsInput";
 
 const SelectSeats = () => {
   const context = useContext(BsContext);
-  
+  const { noOfSeat, changeNoOfSeats, seat, changeSeats } = context;
 
   
 };
