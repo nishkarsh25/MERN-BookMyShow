@@ -9,7 +9,13 @@ const TimeShedule = () => {
   // Getting time and change time components from the context.
   const { time, changeTime } = context;
 
-  
+  const handleChangeTime = (value) => {
+    changeTime(value);
+
+    // Setting slot in localStorage
+    window.localStorage.setItem("slot", value);
+  };
+
   
 };
 
