@@ -17,7 +17,14 @@ const Home = () => {
     setErrorMessage,
   } = context;
 
-  
+  const checkNegativeSeatsValidity = (seats) => {
+    for (let seat in seats) {
+      if (Number(seats[seat]) < 0) {
+        return true;
+      }
+    }
+    return false;
+  };
 
   
 
