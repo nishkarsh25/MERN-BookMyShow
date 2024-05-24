@@ -13,3 +13,6 @@ app.use(express.urlencoded({ extended: false }))
 // creating an api and seperating it.
 app.use("/api", require("./routes"));
 
+app.listen(8080,()=>{
+    console.log("App listening to port 8080")
+});
