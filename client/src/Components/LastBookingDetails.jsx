@@ -36,4 +36,4 @@ const LastBookingDetails = () => {
   );
 };
 
-
+export default LastBookingDetails;
