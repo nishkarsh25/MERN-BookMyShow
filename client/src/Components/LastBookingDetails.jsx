@@ -6,7 +6,10 @@ const LastBookingDetails = () => {
   const context = useContext(BsContext);
   const { handleGetLastBooking, lastBookingDetails } = context;
 
-  
+  useEffect(() => {
+    handleGetLastBooking();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   
 };
