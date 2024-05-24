@@ -6,6 +6,24 @@ import Modal from "../Components/ModalComponent";
 import BsContext from "../Context/BsContext";
 import { useContext } from "react";
 
+const Home = () => {
+  const context = useContext(BsContext);
+  const {
+    movie,
+    time,
+    noOfSeat,
+    handlePostBooking,
+    setErrorPopup,
+    setErrorMessage,
+  } = context;
 
+  
+
+  
+
+  
+
+  
+};
 
 
