@@ -64,7 +64,21 @@ const BsState = (props) => {
   };
   
 
-  
+  useEffect(() => {
+    const movie = window.localStorage.getItem("movie");
+    const slot = window.localStorage.getItem("slot");
+    const seats = JSON.parse(window.localStorage.getItem("seats"));
+
+    if (movie) {
+      changeMovie(movie);
+    }
+    if (slot) {
+      changeTime(slot);
+    }
+    if (seats) {
+      changeNoOfSeats(seats);
+    }
+  }, []);
 
   
 };
