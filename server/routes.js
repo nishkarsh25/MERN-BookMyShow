@@ -6,7 +6,18 @@ const Ticket = require("./schema"); // Import the Ticket schema
 router.post("/booking", async (req, res) => {
   const { movie, slot, seats } = req.body;
 
-  
+  try {
+    // Create a new Ticket instance using the provided data
+    const myData = new Ticket({ movie, slot, seats });
+
+    // Save the Ticket instance to the database
+    await myData.save();
+
+    // Respond with success message and the saved data
+    res.status(200).json({ data: myData, message: "Booking successful!" });
+  } catch (error) {
+    
+  }
 });
 
 
