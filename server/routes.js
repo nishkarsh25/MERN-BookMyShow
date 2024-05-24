@@ -26,7 +26,20 @@ router.post("/booking", async (req, res) => {
 
 // Endpoint for getting the last booking details from the database and sending it to the frontend.
 router.get("/booking", async (req, res) => {
-  
+  try {
+    // Retrieve the last booking by sorting in descending order and limiting to 1 result
+    const myData = await Ticket.find().sort({ _id: -1 }).limit(1);
+
+    if (myData.length === 0) {
+      // No booking found, respond with appropriate message
+      res.status(200).json({ data: null, message: "No previous booking found!" });
+    } else {
+      // Respond with the last booking details
+      res.status(200).json({ data: myData[0] });
+    }
+  } catch (error) {
+    
+  }
 });
 
 
