@@ -10,4 +10,6 @@ app.use(express.json());
 //Connecting to Database
 connectDB();
 app.use(express.urlencoded({ extended: false }))
+// creating an api and seperating it.
+app.use("/api", require("./routes"));
 
