@@ -18,7 +18,9 @@ const SeatsInput = ({
     );
   };
 
-  
+  const handleChecked = (text) => {
+    changeSeats(text);
+  };
 
   
 };
