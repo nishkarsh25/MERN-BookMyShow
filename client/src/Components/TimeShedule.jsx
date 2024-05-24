@@ -6,7 +6,8 @@ import BsContext from "../Context/BsContext";
 const TimeShedule = () => {
   const context = useContext(BsContext);
 
-  
+  // Getting time and change time components from the context.
+  const { time, changeTime } = context;
 
   
   
