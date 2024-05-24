@@ -5,7 +5,10 @@ function Modal(props) {
   const context = useContext(BsContext);
   const { errorPopup, errorMessage, setErrorPopup, setErrorMessage } = context;
 
-  
+  const handleClosePopup = () => {
+    setErrorMessage("");
+    setErrorPopup(false);
+  };
 
   
 }
