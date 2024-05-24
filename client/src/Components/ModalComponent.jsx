@@ -12,7 +12,9 @@ function Modal(props) {
 
   return (
     <>
-      
+      {errorPopup && (
+        
+      )}
     </>
   );
 }
