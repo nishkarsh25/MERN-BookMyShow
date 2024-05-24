@@ -1,11 +1,7 @@
-import React from 'react'
+import React from 'react';
+import BsState from './Context/BsState';
+import Home from './Pages/Home';
 
-const App = () => {
-  return (
-    <div className='bg-black'>
-      hi
-    </div>
-  )
-}
 
-export default App
+
+
