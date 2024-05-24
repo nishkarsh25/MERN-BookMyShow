@@ -33,4 +33,4 @@ const SelectMovie = () => {
   );
 };
 
-
+export default SelectMovie;
