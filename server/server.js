@@ -9,5 +9,5 @@ app.use(cors());
 app.use(express.json());
 //Connecting to Database
 connectDB();
-
+app.use(express.urlencoded({ extended: false }))
 
