@@ -4,7 +4,7 @@ import { moviesList } from "../data";
 import BsContext from "../Context/BsContext";
 
 const SelectMovie = () => {
-  
+  const context = useContext(BsContext);
 
   
 
