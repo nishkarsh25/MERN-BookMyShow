@@ -53,7 +53,34 @@ const Home = () => {
     }
   };
 
-  
+  return (
+    <>
+      <Modal />
+      <div className="bg-gradient-to-b from-gray-800 to-gray-700 min-h-screen flex flex-col justify-center items-center">
+        <div className="container mx-auto py-8 px-4">
+          <h1 className="text-4xl font-bold text-white mb-8">Book Your Movie Tickets</h1>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="bg-gray-600 p-6 rounded-lg shadow-md">
+              <SelectMovie />
+            </div>
+            <div className="bg-gray-600 p-6 rounded-lg shadow-md">
+              <LastBookingDetails />
+            </div>
+          </div>
+          <div className="bg-gray-600 p-6 rounded-lg shadow-md mt-8">
+            <TimeShedule />
+            <SelectSeats />
+            <button
+              onClick={handleBookNow}
+              className="w-full py-3 mt-6 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white font-bold rounded-md shadow-md transition duration-300 focus:outline-none focus:ring-2 focus:ring-purple-400"
+            >
+              Book Now
+            </button>
+          </div>
+        </div>
+      </div>
+    </>
+  );
 };
 
 
