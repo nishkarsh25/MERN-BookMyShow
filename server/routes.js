@@ -38,7 +38,11 @@ router.get("/booking", async (req, res) => {
       res.status(200).json({ data: myData[0] });
     }
   } catch (error) {
-    
+    // Handle errors and respond with an error message
+    res.status(500).json({
+      data: null,
+      message: "Something went wrong! Please try again.",
+    });
   }
 });
 
