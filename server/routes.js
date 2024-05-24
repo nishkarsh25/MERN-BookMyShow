@@ -46,4 +46,4 @@ router.get("/booking", async (req, res) => {
   }
 });
 
-
+module.exports = router;
