@@ -35,4 +35,4 @@ const TimeShedule = () => {
   );
 };
 
-
+export default TimeShedule;
