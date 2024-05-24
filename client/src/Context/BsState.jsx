@@ -104,4 +104,4 @@ const BsState = (props) => {
     </BsContext.Provider>
   );
 };
-
+export default BsState;
