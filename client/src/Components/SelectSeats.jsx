@@ -7,7 +7,9 @@ const SelectSeats = () => {
   const context = useContext(BsContext);
   const { noOfSeat, changeNoOfSeats, seat, changeSeats } = context;
 
-  
+  return (
+    
+  );
 };
 
 
