@@ -4,7 +4,7 @@ import BsContext from "../Context/BsContext";
 import SeatsInput from "./SeatsInput";
 
 const SelectSeats = () => {
-  
+  const context = useContext(BsContext);
   
 
   
