@@ -1,5 +1,4 @@
 const mongoose = require('mongoose');
-
 // Creating a new schema for storing movie booking details.
 const TicketSchema = new mongoose.Schema({
   movie: { type: String },
@@ -13,6 +12,6 @@ const TicketSchema = new mongoose.Schema({
     D2: { type: Number },
   },
 });
-
 // Registering the schema with the Mongoose model.
 const Ticket = mongoose.model('bookmovietickets', TicketSchema);
+module.exports = Ticket;
