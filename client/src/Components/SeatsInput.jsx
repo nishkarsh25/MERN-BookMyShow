@@ -22,7 +22,9 @@ const SeatsInput = ({
     changeSeats(text);
   };
 
-  
+  return (
+    
+  );
 };
 
 
