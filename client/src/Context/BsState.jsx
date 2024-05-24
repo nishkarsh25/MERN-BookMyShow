@@ -53,7 +53,15 @@ const BsState = (props) => {
     }
   };
 
-  
+  const handleGetLastBooking = async () => {
+    try {
+      const response = await axios.get('http://localhost:8080/api/booking');
+      const data = response.data;
+      setLastBookingDetails(data.data);
+    } catch (error) {
+      console.error('There was an error fetching the last booking details:', error);
+    }
+  };
   
 
   
