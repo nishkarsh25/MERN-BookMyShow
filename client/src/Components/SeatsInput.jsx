@@ -50,4 +50,4 @@ const SeatsInput = ({
   );
 };
 
-
+export default SeatsInput;
