@@ -7,7 +7,16 @@ const SeatsInput = ({
   seat,
   text,
 }) => {
-  
+  const changeSeatsHandler = (e) => {
+    changeNoOfSeats({ ...noOfSeat, [e.target.name]: Number(e.target.value) });
+    window.localStorage.setItem(
+      "seats",
+      JSON.stringify({
+        ...noOfSeat,
+        [e.target.name]: Number(e.target.value),
+      })
+    );
+  };
 
   
 
