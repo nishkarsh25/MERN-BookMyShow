@@ -16,7 +16,11 @@ router.post("/booking", async (req, res) => {
     // Respond with success message and the saved data
     res.status(200).json({ data: myData, message: "Booking successful!" });
   } catch (error) {
-    
+    // Handle errors and respond with an error message
+    res.status(500).json({
+      data: null,
+      message: "Something went wrong! Please try again.",
+    });
   }
 });
 
