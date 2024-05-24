@@ -80,6 +80,28 @@ const BsState = (props) => {
     }
   }, []);
 
-  
+  return (
+    <BsContext.Provider
+      value={{
+        handlePostBooking,
+        handleGetLastBooking,
+        movie,
+        changeMovie,
+        time,
+        changeTime,
+        noOfSeat,
+        changeNoOfSeats,
+        lastBookingDetails,
+        errorPopup,
+        setErrorPopup,
+        errorMessage,
+        setErrorMessage,
+        seat, // Provide seat state
+        changeSeats, // Provide changeSeats function
+      }}
+    >
+      {props.children}
+    </BsContext.Provider>
+  );
 };
 
