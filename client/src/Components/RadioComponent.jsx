@@ -23,4 +23,4 @@ const RadioComponent = ({ text, changeSelection, data }) => {
   );
 };
 
-
+export default RadioComponent;
