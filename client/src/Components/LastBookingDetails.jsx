@@ -30,7 +30,7 @@ const LastBookingDetails = () => {
           <p className="text-lg font-semibold text-white">Movie: <span className="font-normal">{lastBookingDetails.movie}</span></p>
         </>
       ) : (
-        
+        <p className="text-lg text-white">No Previous Booking Found!</p>
       )}
     </div>
   );
