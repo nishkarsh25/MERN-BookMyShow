@@ -35,7 +35,23 @@ const Home = () => {
     return true;
   };
 
-  
+  const handleBookNow = () => {
+    if (!movie) {
+      setErrorPopup(true);
+      setErrorMessage("Please select a movie!");
+    } else if (!time) {
+      setErrorPopup(true);
+      setErrorMessage("Please select a time slot!");
+    } else if (
+      checkNegativeSeatsValidity(noOfSeat) ||
+      checkZeroSeatsValidity(noOfSeat)
+    ) {
+      setErrorPopup(true);
+      setErrorMessage("Invalid Seats!");
+    } else {
+      handlePostBooking();
+    }
+  };
 
   
 };
