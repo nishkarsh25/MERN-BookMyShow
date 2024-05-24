@@ -6,7 +6,8 @@ import BsContext from "../Context/BsContext";
 const SelectMovie = () => {
   const context = useContext(BsContext);
 
-  
+  // Getting movie and change movie components from the context.
+  const { movie, changeMovie } = context;
 
   
 
