@@ -9,7 +9,12 @@ const SelectMovie = () => {
   // Getting movie and change movie components from the context.
   const { movie, changeMovie } = context;
 
-  
+  const handleChangeMovie = (value) => {
+    changeMovie(value);
+
+    // Setting movie in localStorage
+    window.localStorage.setItem("movie", value);
+  };
 
   
 };
