@@ -26,7 +26,14 @@ const Home = () => {
     return false;
   };
 
-  
+  const checkZeroSeatsValidity = (seats) => {
+    for (let seat in seats) {
+      if (Number(seats[seat]) > 0) {
+        return false;
+      }
+    }
+    return true;
+  };
 
   
 
