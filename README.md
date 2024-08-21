@@ -22,7 +22,7 @@ This project is a Movie Ticket Booking System implemented using React.js for the
 
 ## Live Demo
 
-You can try out the live demo of the app [here](https://effortless-malabi-edaf53.netlify.app/).
+You can try out the live demo of the app [here](https://mern-bookmyshow-2.onrender.com).
 
 ## Folder Structure
 
