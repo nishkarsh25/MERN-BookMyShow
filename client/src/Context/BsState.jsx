@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import BsContext from "./BsContext";
-import axios from 'axios';
+import axios from "axios";
 
 const BsState = (props) => {
   const [errorPopup, setErrorPopup] = useState(false);
@@ -21,11 +21,14 @@ const BsState = (props) => {
 
   const handlePostBooking = async () => {
     try {
-      const response = await axios.post('http://localhost:8080/api/booking', {
-        movie: movie,
-        slot: time,
-        seats: noOfSeat,
-      });
+      const response = await axios.post(
+        "https://mern-bookmyshow-2.onrender.com/api/booking",
+        {
+          movie: movie,
+          slot: time,
+          seats: noOfSeat,
+        }
+      );
 
       const data = response.data;
       setErrorPopup(true);
@@ -48,21 +51,25 @@ const BsState = (props) => {
       }
     } catch (error) {
       setErrorPopup(true);
-      setErrorMessage('Failed to book the movie. Please try again.');
-      console.error('There was an error booking the movie:', error);
+      setErrorMessage("Failed to book the movie. Please try again.");
+      console.error("There was an error booking the movie:", error);
     }
   };
 
   const handleGetLastBooking = async () => {
     try {
-      const response = await axios.get('http://localhost:8080/api/booking');
+      const response = await axios.get(
+        "https://mern-bookmyshow-2.onrender.com/api/booking"
+      );
       const data = response.data;
       setLastBookingDetails(data.data);
     } catch (error) {
-      console.error('There was an error fetching the last booking details:', error);
+      console.error(
+        "There was an error fetching the last booking details:",
+        error
+      );
     }
   };
-
 
   useEffect(() => {
     const movie = window.localStorage.getItem("movie");
